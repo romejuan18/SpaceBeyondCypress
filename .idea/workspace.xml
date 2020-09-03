@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07902ff1-f38b-40a2-b373-66fe816cc841" name="Default Changelist" comment="" />
+    <list default="true" id="07902ff1-f38b-40a2-b373-66fe816cc841" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/SpaceBeyond/flight-search-test.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/SpaceBeyond/flight-search-test.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gybEAiuCmXICAQ2iAgxpdnnSwz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,11 +41,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599089664510</updated>
-      <workItem from="1599089665560" duration="9593000" />
+      <workItem from="1599089665560" duration="13760000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="670" y="429" key="Github.ShareDialog" timestamp="1599100027709">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="670" y="429" key="Github.ShareDialog/1680.-161.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1599100027709" />
+    <state x="572" y="230" key="Github.UntrackedFilesDialog" timestamp="1599100160532">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="572" y="230" key="Github.UntrackedFilesDialog/1680.-161.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1599100160532" />
+    <state x="505" y="248" key="run.anything.popup" timestamp="1599102400917">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="248" key="run.anything.popup/1680.-161.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1599102400917" />
   </component>
 </project>

@@ -26,7 +26,8 @@ describe("Busqueda de viaje al espacio ingresando fechas, numero de adultos y ni
             cy.get(".theme__active___31xyK > .theme__values___1jS4g > :nth-child(4)").click();
             cy.wait(400);
             cy.get(".Hero__hero___1FDXn > :nth-child(4) > .theme__button___1iKuo").click();
-            //cy.xpath(".//section[1]/div[3]/div/div[3]/ul/li[3]").click()
+            cy.wait(300);
+            cy.url().should('include', '/destinations');
             }
         );
         it('Seleccionar un planeta para viajar', function () {
@@ -35,6 +36,8 @@ describe("Busqueda de viaje al espacio ingresando fechas, numero de adultos y ni
             cy.scrollTo(0, 500);
             cy.contains("Madan");
             cy.get(":nth-child(1) > .theme__cardActions___1aHjq > .theme__button___1iKuo").click();
+            cy.wait(300);
+            cy.url().should('include', '/checkout');
             }
         );
     });
@@ -44,17 +47,29 @@ describe("Busqueda de viaje al espacio ingresando fechas, numero de adultos y ni
             cy.get(".Checkout__headline-1___2KQaR")
             cy.contains("Checkout")
             cy.get("form > :nth-child(1) > .theme__inputElement___27dyY").type("Juan Pedro Prueba");
-            cy.wait(400);
             cy.get("form > :nth-child(2) > .theme__inputElement___27dyY").type("juan@test.test");
-            cy.wait(400);
             cy.get("form > :nth-child(3) > .theme__inputElement___27dyY").type("222-22-1243");
-            cy.wait(400);
             cy.get("form > :nth-child(4) > .theme__inputElement___27dyY").type("(212) 324-4152");
-            cy.wait(400);
             cy.contains("Order Summary");
             cy.get(".theme__check___2B20W").click();
             cy.get(".flexboxgrid__col-xs___1ROHR > .theme__button___1iKuo").click();
             }
         );
+    });
+
+    context("API Test", () => {
+        it('API Test', () => {
+            cy.request('GET','https://api.thecatapi.com/v1/images/search')
+                .then((response)=>{
+                    expect(response.status).equal(200)
+                    expect(response.body).to.not.be.null
+                    cy.request('GET','https://api.thecatapi.com/v1/images/search')
+                .its('headers')
+                .its('content-type')
+                .should('include', 'application/json')
+
+
+            })
+        })
     });
 });
