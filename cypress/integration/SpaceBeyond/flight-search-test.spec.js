@@ -67,8 +67,6 @@ describe("Busqueda de viaje al espacio ingresando fechas, numero de adultos y ni
                 .its('headers')
                 .its('content-type')
                 .should('include', 'application/json')
-
-
             })
         })
     });
