@@ -1,0 +1,17 @@
+{
+  "name": "spacebeyondcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^5.1.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.0"
+  }
+}
